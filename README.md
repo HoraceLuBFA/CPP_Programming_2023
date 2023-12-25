@@ -50,6 +50,14 @@
 │   ├── newdialogwindow.h
 │   └── newdialogwindow.ui
 ├── Homework_07_OpenCV_Basics
+│   ├── .vscode
+│   │   ├── c_cpp_properties.json
+│   │   ├── compile_commands.json
+│   │   ├── launch.json
+│   │   └── tasks.json
+│   ├── .xmake
+│   │   ├── macosx
+│   │   └── vscode-build.log
 │   ├── Resources
 │   │   ├── test.png
 │   │   └── test_video.mp4
