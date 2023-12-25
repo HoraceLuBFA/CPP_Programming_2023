@@ -1,11 +1,8 @@
-
-
 # CPP_Programming_2023
 
 北京电影学院影视技术系2023-24年第一学期《程序设计》课程示例代码
 
-
-### 文件目录说明
+## 文件目录说明
 
 ```
 .
@@ -52,13 +49,16 @@
 │   ├── newdialogwindow.cpp
 │   ├── newdialogwindow.h
 │   └── newdialogwindow.ui
+├── Homework_07_OpenCV_Basics
+│   ├── Resources
+│   ├── src
+│   └── xmake.lua
 └── README.md
 
-6 directories, 39 files
+9 directories, 40 files
 
 ```
 
-
-### 作者
+## 作者
 
 Horace LU @ Beijing Film Academy
