@@ -51,11 +51,17 @@
 │   └── newdialogwindow.ui
 ├── Homework_07_OpenCV_Basics
 │   ├── Resources
+│   │   ├── test.png
+│   │   └── test_video.mp4
 │   ├── src
+│   │   ├── 07_01_image_video_loading.cpp
+│   │   ├── 07_02_image_editing.cpp
+│   │   ├── 07_03_edge_detection.cpp
+│   │   └── 07_04_brightness_contrast.cpp
 │   └── xmake.lua
 └── README.md
 
-9 directories, 40 files
+9 directories, 46 files
 
 ```
 
