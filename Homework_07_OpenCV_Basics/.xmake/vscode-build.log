@@ -1,0 +1,5 @@
+[ 25%]: cache compiling.debug src/07_01_image_video_loading.cpp
+clang++ -c -Qunused-arguments -target arm64-apple-macos13.6 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -g -O0 -std=c++17 -I/usr/local/opencv/include/opencv4 -I/usr/local/opencv/include -o build/.objs/Learn_OpenCV/macosx/arm64/debug/src/07_01_image_video_loading.cpp.o src/07_01_image_video_loading.cpp
+[ 50%]: linking.debug Learn_OpenCV
+clang++ -o build/macosx/arm64/debug/Learn_OpenCV build/.objs/Learn_OpenCV/macosx/arm64/debug/src/07_01_image_video_loading.cpp.o -target arm64-apple-macos13.6 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -stdlib=libc++ -lz -L/usr/local/opencv/lib -Xlinker -rpath -Xlinker /usr/local/opencv/lib -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_imgcodecs -lopencv_videoio
+[100%]: build ok, spent 1.14s

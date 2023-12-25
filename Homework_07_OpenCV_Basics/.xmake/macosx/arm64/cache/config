@@ -1,0 +1,12 @@
+{
+    options = {
+        mode = "debug",
+        arch = "arm64",
+        plat = "macosx",
+        clean = true
+    },
+    mtimes = {
+        ["xmake.lua"] = 1703511328
+    },
+    recheck = false
+}

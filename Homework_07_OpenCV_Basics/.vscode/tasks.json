@@ -1,0 +1,31 @@
+// tasks.json 用于在 Visual Studio Code 中配置编译任务
+
+{
+    "version": "2.0.0", // VS Code 任务配置文件的版本号
+    "tasks": [ // 任务数组，可以定义多个任务
+        {
+            "type": "shell", // 任务类型为 shell，即在 shell 中执行命令
+            "label": "【构建】clang++", // 任务的标签，用户可识别的任务名称；可以自定义命名，之后通过 Ctrl/Cmd + Shift + P 调出快捷菜单，输入 Run Task 即可选择对应任务运行；或通过右上角运行按钮执行构建任务
+            "command": "/opt/homebrew/opt/llvm/bin/clang++", // 编译命令，这里指定了 clang++ 编译器的路径，可以替换为你的编译器路径
+            "args": [ // 编译器的参数列表
+                "-std=c++17", // 设置 C++ 标准为 C++17
+                "-g", // 添加调试信息
+                "-Wall", // 开启所有警告
+                "${file}", // 当前打开的文件，作为编译输入
+                "-o", // 指定输出文件
+                "${fileDirname}/${fileBasenameNoExtension}", // 输出文件的路径和名称（不含扩展名）
+                "-Wl,-rpath,/usr/local/opencv/lib", // 设置运行时库的搜索路径（对 brew 安装的 OpenCV 不需要设置）
+                "`pkg-config", "--cflags", "--libs", "opencv4`" // 使用 pkg-config 获取 OpenCV 4 的编译和链接标志，自动输出 opencv4 全部依赖路径，作为编译参数的一部分
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}" // 当前工作目录设置为工作区文件夹
+            },
+            "group": {
+                "kind": "build", // 任务种类是构建任务
+                "isDefault": true // 设为默认构建任务
+            },
+            "detail": "compiler: llvm clang++" // 任务详细描述，可以自定义名称，这里指定使用的编译器是 llvm clang++
+        }
+        // 其他任务的配置可以在这里继续添加
+    ]
+}

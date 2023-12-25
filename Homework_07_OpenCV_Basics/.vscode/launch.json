@@ -1,0 +1,25 @@
+// launch.json 用于在 Visual Studio Code 中配置调试任务
+
+{
+    "configurations": [
+         // 配置数组，可以定义多个调试配置
+        {
+            "name": "【构建和调试】clang++", // 调试配置的名称
+            "type": "cppdbg", // 调试器类型，这里是针对 C++ 的调试器
+            "request": "launch", // 调试请求类型，launch 表示启动新的调试会话
+            "program": "${fileDirname}/${fileBasenameNoExtension}", // 要调试的程序的路径，这里指的是当前文件所在目录下与文件同名的可执行文件
+            "args": [], // 启动程序时传递给它的参数列表，这里为空
+            "stopAtEntry": false, // 是否在程序入口处停止，这里设置为不在入口处停止
+            "cwd": "${workspaceFolder}", // 调试时的当前工作目录，设置为工作区文件夹
+            "externalConsole": true, // 是否在外部控制台中运行调试的程序
+            "MIMode": "lldb", // 用于调试的机器接口，这里使用的是 LLDB
+            "preLaunchTask": "【构建】clang++", // 调试前要运行的任务，引用了 tasks.json 中自定义的构建任务
+            "logging": {
+                "moduleLoad": false, // 是否记录模块加载的日志，这里关闭
+                "programOutput": true // 是否记录程序输出的日志，这里开启
+            }
+        }
+        // 其他调试配置可以在这里继续添加
+    ],
+    "version": "2.0.0" // 配置文件版本
+}

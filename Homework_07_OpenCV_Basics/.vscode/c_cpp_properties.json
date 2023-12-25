@@ -1,0 +1,25 @@
+// c_cpp_properties.json，用于配置“C/C++ 扩展插件”的属性，以便于提供正确的 IntelliSense（智能提示）、编译和调试支持
+
+{
+    "configurations": [ // 配置数组，可以定义针对不同环境的多个配置
+        {
+            "name": "Mac", // 配置名称
+            "includePath": [ // 包含路径数组，指定 IntelliSense 查找头文件的位置
+                "${workspaceFolder}/**", // 工作区文件夹下的所有目录
+                "/usr/local/opencv/include/opencv4", // OpenCV 4 的头文件路径，需自定义
+                "/usr/local/opencv/include" // OpenCV 的其他头文件路径，需自定义
+            ],
+            "defines": [], // 定义的预处理器宏，这里为空
+            "macFrameworkPath": [ // MacOS 特有的框架路径
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX13.sdk/System/Library/Frameworks"
+            ],
+            "compilerPath": "/opt/homebrew/opt/llvm/bin/clang++", // 编译器路径，这里指定为安装的 clang++ 路径
+            "cStandard": "c17", // C 语言标准
+            "cppStandard": "c++17", // C++ 语言标准
+            "intelliSenseMode": "macos-clang-arm64", // IntelliSense 模式，这里设置为适用于 ARM64 架构的 MacOS 系统
+            "compileCommands": "compile_commands.json" // 编译命令文件，用于提供更精确的编译信息
+        }
+        // 其他环境的配置可以在这里继续添加
+    ],
+    "version": 4 // 配置文件版本
+}

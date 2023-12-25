@@ -1,0 +1,12 @@
+{
+    cmdlines = {
+        "xmake l /Users/lumenghe/.vscode/extensions/tboox.xmake-vscode-2.2.7/assets/default_target.lua",
+        "xmake -v",
+        "xmake run Learn_OpenCV",
+        "xmake check",
+        "xmake -v",
+        "xmake l /Users/lumenghe/.vscode/extensions/tboox.xmake-vscode-2.2.7/assets/explorer.lua",
+        "xmake l /Users/lumenghe/.vscode/extensions/tboox.xmake-vscode-2.2.7/assets/explorer.lua",
+        "xmake l /Users/lumenghe/.vscode/extensions/tboox.xmake-vscode-2.2.7/assets/explorer.lua"
+    }
+}

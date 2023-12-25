@@ -1,0 +1,6 @@
+[
+{
+  "directory": "/Users/lumenghe/Developing/C++/CPP_Programming_2023/Homework_07_OpenCV_Basics",
+  "arguments": ["clang++", "-c", "-Qunused-arguments", "-isysroot", "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-I/usr/local/opencv/include/opencv4", "-I/usr/local/opencv/include", "-DNDEBUG", "-o", "build/.objs/Learn_OpenCV/macosx/arm64/release/src/07_02_image_editing.cpp.o", "src/07_02_image_editing.cpp"],
+  "file": "src/07_02_image_editing.cpp"
+}]

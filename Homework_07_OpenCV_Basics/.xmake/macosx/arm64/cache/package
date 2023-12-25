@@ -1,0 +1,20 @@
+{
+    llvm = {
+        __requireconfs = {
+            optional = true
+        },
+        __requirestr = "llvm",
+        __enabled = true,
+        envs = {
+            DYLD_LIBRARY_PATH = {
+                "/Users/lumenghe/.xmake/packages/l/llvm/15.0.0/f763a4ce3fc845ccabe70de68dd578ab/lib"
+            },
+            LD_LIBRARY_PATH = {
+                "/Users/lumenghe/.xmake/packages/l/llvm/15.0.0/f763a4ce3fc845ccabe70de68dd578ab/lib"
+            },
+            PATH = {
+                "/Users/lumenghe/.xmake/packages/l/llvm/15.0.0/f763a4ce3fc845ccabe70de68dd578ab/bin"
+            }
+        }
+    }
+}
