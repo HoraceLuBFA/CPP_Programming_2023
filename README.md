@@ -34,6 +34,7 @@
 │   ├── 05_04.cpp
 │   └── 05_05.cpp
 ├── Homework_06_Qt_Login
+│   ├── .DS_Store
 │   ├── dialog.cpp
 │   ├── dialog.h
 │   ├── dialog.ui
@@ -50,6 +51,7 @@
 │   ├── newdialogwindow.h
 │   └── newdialogwindow.ui
 ├── Homework_07_OpenCV_Basics
+│   ├── .DS_Store
 │   ├── .vscode
 │   │   ├── c_cpp_properties.json
 │   │   ├── compile_commands.json
@@ -67,9 +69,16 @@
 │   │   ├── 07_03_edge_detection.cpp
 │   │   └── 07_04_brightness_contrast.cpp
 │   └── xmake.lua
+├── Homework_08_STL
+│   ├── .DS_Store
+│   ├── 08_01.cpp
+│   ├── 08_02.cpp
+│   ├── 08_03.cpp
+│   ├── 08_04.cpp
+│   └── 08_04_lambda.cpp
 └── README.md
 
-9 directories, 46 files
+103 directories, 83 files
 
 ```
 
