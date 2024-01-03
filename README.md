@@ -51,7 +51,6 @@
 │   ├── newdialogwindow.h
 │   └── newdialogwindow.ui
 ├── Homework_07_OpenCV_Basics
-│   ├── .DS_Store
 │   ├── .vscode
 │   │   ├── c_cpp_properties.json
 │   │   ├── compile_commands.json
@@ -70,7 +69,6 @@
 │   │   └── 07_04_brightness_contrast.cpp
 │   └── xmake.lua
 ├── Homework_08_STL
-│   ├── .DS_Store
 │   ├── 08_01.cpp
 │   ├── 08_02.cpp
 │   ├── 08_03.cpp
