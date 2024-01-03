@@ -76,8 +76,6 @@
 │   └── 08_04_lambda.cpp
 └── README.md
 
-103 directories, 83 files
-
 ```
 
 ## 作者
